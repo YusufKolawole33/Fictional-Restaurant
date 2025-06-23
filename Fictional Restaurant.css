@@ -1,0 +1,98 @@
+/* style.css */
+
+/* --- Hero Section Styles --- */
+.hero-section {
+    background: url('https://via.placeholder.com/1920x800/FF5733/FFFFFF?text=Delicious+Dish') no-repeat center center / cover;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+    /* This ensures content inside is positioned relative to the hero section */
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent dark overlay for text readability */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ensures text and button are above the dark overlay */
+}
+
+/* --- Image Styles --- */
+.menu-item-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Slightly rounded corners for menu item images */
+}
+
+.about-us-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Slightly rounded corners for the About Us image */
+}
+
+/* --- Footer Styles --- */
+footer {
+    background-color: #343a40; /* Dark background color for the footer */
+    color: white; /* White text color for the footer */
+    padding: 20px 0; /* Padding above and below the footer content */
+}
+
+.social-icons a {
+    color: white; /* White color for social media icons */
+    margin: 0 10px; /* Spacing between social media icons */
+    font-size: 24px; /* Larger size for social media icons */
+}
+
+/* --- General Custom Styling for a "Restaurant" Theme --- */
+body {
+    font-family: 'Georgia', serif; /* Uses a classic, elegant serif font for overall text */
+}
+
+/* --- Navbar Customizations --- */
+.navbar {
+    background-color: #8B0000; /* Dark Red background for the navigation bar */
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important; /* Forces white color for brand and links, overriding Bootstrap defaults */
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #FFD700 !important; /* Changes to a gold color on hover for visual feedback */
+}
+
+/* --- Button Customizations --- */
+.btn-primary {
+    background-color: #8B0000; /* Sets the primary button background to dark red */
+    border-color: #8B0000; /* Sets the primary button border to dark red */
+}
+
+.btn-primary:hover {
+    background-color: #A52A2A; /* Slightly darker red when hovering over the primary button */
+    border-color: #A52A2A; /* Matches the hover background color for the border */
+}
+
+/* --- Card Customizations (for menu items) --- */
+.card-title {
+    color: #8B0000; /* Sets the menu item title color to dark red */
+}
+
+.card-text {
+    color: #333; /* Sets the general card text color to a dark gray */
+}
+
+/* --- Form Field Customizations --- */
+.form-control:focus {
+    border-color: #8B0000; /* Changes the border color of form fields when focused */
+    box-shadow: 0 0 0 0.25rem rgba(139, 0, 0, 0.25); /* Adds a subtle red glow when a form field is focused */
+}
